@@ -25,6 +25,7 @@ while True:
         if data.tick_last_update > latest_update:
             print(vars(data))
             print('Illumination: {} lx'.format(data.val_light))
+            print('Humidity: {} degree'.format(data.val_humi))
 
         latest_update = data.tick_last_update
 
